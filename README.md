@@ -37,7 +37,7 @@ For a complete end-to-end walk-through of creating this application, please refe
 
 2. Add your Azure Website as a git remote.
 
-		git remote add azure https://username@your-azure-website.scm.azurewebsites.net:443/your-azure-website.git
+		git remote add azure https://username@your-website.scm.azurewebsites.net:443/your-website.git
 
 3. Deploy by pushing to the remote.
 
