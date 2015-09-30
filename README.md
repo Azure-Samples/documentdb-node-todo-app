@@ -1,6 +1,6 @@
 ---
 services: documentdb
-platforms: node
+platforms: nodejs
 author: ryancrawcour
 ---
 
