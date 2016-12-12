@@ -34,7 +34,7 @@ var docDbClient = new DocumentDBClient(config.host, {
 });
 var taskDao = new TaskDao(docDbClient, config.databaseId, config.collectionId);
 var taskList = new TaskList(taskDao);
-taskDao.init();
+taskDao.init(function(err) { if(err) throw err; });
 
 app.get('/', taskList.showTasks.bind(taskList));
 app.post('/addtask', taskList.addTask.bind(taskList));
@@ -69,11 +69,6 @@ app.use(function(err, req, res, next) {
         message: err.message,
         error: {}
     });
-});
-
-// begin listening
-app.listen(3000, function() {
-  console.log('Listening on port 3000')
 });
 
 module.exports = app;
