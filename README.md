@@ -28,7 +28,12 @@ For a complete end-to-end walk-through of creating this application, please refe
 
 	<add key="endpoint" value="~enter URI for your DocumentDB Account, from Azure Preview portal~" /> 
 	<add key="authKey" value="~enter either Primary or Secondary key for your DocumentDB Account, from Azure Preview portal~" /> 
-5. Run **npm start** in a terminal to start your start your node application, and launch a browser and navigate to **http://127.0.0.1:3000/**
+
+5. Install the dependencies by opening a terminal, navigating to the directory in which the sample was installed, and running **npm install**. 
+
+6. In the terminal, run **npm start** to start your start your node application. 
+
+7. Launch a browser and navigate to **http://127.0.0.1:3000/**
 ![My ToDo List Node.js application](./media/run-1.png)
 
 ## Deploy this sample to Azure
